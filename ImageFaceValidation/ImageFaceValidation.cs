@@ -66,7 +66,7 @@ namespace ImageFaceValidation
 
                         MemoryStream ms = new MemoryStream();
                         httpPostedFileBase.InputStream.CopyTo(ms);
-                        //mmm model input is filename... moet ding opslaan op disk
+                        //mmm model input is filename... need to store on disk
                         string tempFileName = System.IO.Path.GetTempFileName();
                         httpPostedFileBase.SaveAs(tempFileName);
 
